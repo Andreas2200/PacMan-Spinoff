@@ -1,0 +1,34 @@
+Måske = Maybe
+
+Game
+- Enemies
+- PickUps for player
+- Warps (Måske)
+- Power Ups (Måske)
+
+UI
+- PickUp Count
+- Liv
+- Score
+- Pause Menu
+ - Settings Menu
+- Mini Map (Måske)
+
+Scripts
+- Lav basis version af spiller script (X)
+	- Færdiggør spiller script
+- Lav basis version af fjende script (X)	
+	- Færdiggør fjende script
+- Lav PickUp script
+- Lav UI script (Styrer de forskellige UI elementer)
+- Lav LevelLoader (Eventuelt med arrays)
+
+Moddeller 
+- Spiller
+- Fjende
+- Bane (Måske)
+
+
+
+TEXTURE CREDITS:
+- Floor texture (JunglePath) by Spiral Graphics
