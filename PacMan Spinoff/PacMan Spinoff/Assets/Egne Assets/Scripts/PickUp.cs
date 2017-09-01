@@ -5,13 +5,17 @@ using UnityEngine;
 public class PickUp : MonoBehaviour {
 
     public int pointInc;
+    LevelManager LM;
 
 
-	void Start () {
+	void Start ()
+    {
+        LM = FindObjectOfType<LevelManager>();
 		
 	}
 
-	void Update () {
+	void Update ()
+    {
 		
 	}
 
@@ -20,7 +24,6 @@ public class PickUp : MonoBehaviour {
         if(other.gameObject.CompareTag("Player"))
         {
             GameObject.Destroy(gameObject);
-
         }
     }
 }
