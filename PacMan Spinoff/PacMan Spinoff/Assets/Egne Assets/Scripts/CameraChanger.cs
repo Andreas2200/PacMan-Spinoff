@@ -32,7 +32,6 @@ public class CameraChanger : MonoBehaviour {
             transform.position = cameraPos.transform.position; 
             transform.eulerAngles = cameraPos.transform.eulerAngles; 
         }
-        TopViewTime = 10;
 	}
 	
 	
