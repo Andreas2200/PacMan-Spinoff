@@ -12,6 +12,7 @@ public class LevelManager : MonoBehaviour {
     float TimerTime;
     public int TotalScore;
     public int pointInc;
+    public GameObject Enemy1;
 
 	// Use this for initialization
 	void Start () {
@@ -21,10 +22,32 @@ public class LevelManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         TimerTime =(int)Time.time;
         Timer.text = "Time: " + TimerTime;
         TopView.text = "Mini Map: " + (int)CC.TopViewTime;
         Score.text = "Score: " + TotalScore;
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            ExitGame();
         }
+
+        if(TimerTime>1)
+        {
+            Enemy1.SetActive(true);
+        }
+        else
+        {
+            Enemy1.SetActive(false);
+        }
+
+    }
+
+    void ExitGame()
+    {
+        Application.Quit();
+    }
+
 }
