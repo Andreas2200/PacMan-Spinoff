@@ -64,13 +64,13 @@ public class CameraChanger : MonoBehaviour {
     {
         if (FirstPersonView == true && TopView == false && TopViewTime > 0)
         {
-                Debug.Log("C er trykket!");
-                Debug.Log("Der er nu skiftet til Top View!");
-                transform.position = new Vector3(TopViewX, TopViewY, TopViewZ);
-                transform.eulerAngles = new Vector3(TopViewRotX, TopViewRotY, TopViewRotZ);
-                FirstPersonView = false;
-                TopView = true;
-                Debug.Log(TopViewTime);
+            Debug.Log("C er trykket!");
+            Debug.Log("Der er nu skiftet til Top View!");
+            transform.position = new Vector3(TopViewX, TopViewY, TopViewZ);
+            transform.eulerAngles = new Vector3(TopViewRotX, TopViewRotY, TopViewRotZ);
+            FirstPersonView = false;
+            TopView = true;
+            
             
         }
         else if (FirstPersonView == false && TopView == true)

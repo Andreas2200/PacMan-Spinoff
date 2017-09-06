@@ -6,7 +6,10 @@ public class PlayerController : MonoBehaviour {
 
     public int Speed = 1;
     public int RotateSpeed = 1;
+    public int Lives;
     public GameObject Respawn;
+    public GameObject Enemy1;
+    public GameObject Enemy1Res;
     CameraChanger CC;
 
 
@@ -32,6 +35,9 @@ public class PlayerController : MonoBehaviour {
         if (other.gameObject.CompareTag("Enemy"))
         {
             CC.player.transform.position = Respawn.transform.position;
+            Lives--;
+            Enemy1.transform.position = Enemy1Res.transform.position;
+
         }
     }
 }
